@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke and Regression"> 
+	
+	
+  <test name="Smoke Test">
+	
+	<groups>
+		<run>
+			<include name="SmokeTest"></include>
+		</run>
+	</groups>  
+	
+    <classes>
+      <class name="testng.TestNgGroups"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+  <test name="Regression Test">
+	  
+    <classes>
+      <class name="testng.TestNgGroups"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
